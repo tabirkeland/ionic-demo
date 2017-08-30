@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Live System Data</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-item-group>
+    <ion-list>
+      <ion-item *ngFor="let param of liveDataParameters">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-6 text-left>{{ param.name }}</ion-col>
+            <ion-col col-3 text-right>{{ param.value }}</ion-col>
+            <ion-col col-3 text-left>{{ param.units }}</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </ion-item-group>
+</ion-content>

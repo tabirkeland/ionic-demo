@@ -1,0 +1,30 @@
+page-home {
+	ion-label.label-ios {
+		margin: 0 !important;
+	}
+  ion-list.list.list-ios {
+    margin-bottom: 0;
+    .item-ios {
+      padding-left:0;
+    }
+  }
+
+  ion-col {
+    &.bool-true {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: lightgreen;
+    }
+    &.bool-false {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: red;
+    }
+  }
+
+  &.ion-page {
+    ion-content {
+      background-image:none;
+    }
+  }
+}
